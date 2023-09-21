@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body{
+  background-color: #f5f5dc;
+}
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 180px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+.featurette-divider {
+  margin: 10px; 
+}
+
+.row{
+  padding: 20px;
+}
+
+.bg-dark {
+  background-color: #00366d!important;
+}
+
+#styleRegion {
+  text-decoration: none!important;
+  color: light;
+}
+
+/* Estilo inicial do texto */
+.hover-text {
+  font-size: 16px;
+  color: #ffffff; /* Cor normal do texto */
+  transition: color 0.3s; /* Transição suave da cor ao passar o mouse */
+  cursor: pointer;
+}
+
+/* Efeito de hover */
+.textTrasition:hover {
+  color: #000000; /* Cor do texto quando o mouse está sobre ele */
+}
+.textTrasition {
+  text-decoration: none;
+  color: #ffffff;
+}

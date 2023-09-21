@@ -15,7 +15,7 @@ This responsive web application provides a dashboard to visualize data related t
 
 ## Usage
 To see the application in action, simply copy and paste this URL: (https://ibge-dashboard.vercel.app/), and open it in your web browser.
-You can also access the code by downloading it from my GitHub repository.
+You can also access the code by downloading it from my GitHub repository(https://github.com/thetabelini/IBGE-Dashboard).
 
 ## Project Status
 In development.
